@@ -1,0 +1,13 @@
+E:\Proyectos_VisualStudio\Ahorcado-NET-Agiles\Ahorcado\bin\Debug\netcoreapp3.1\Ahorcado.exe
+E:\Proyectos_VisualStudio\Ahorcado-NET-Agiles\Ahorcado\bin\Debug\netcoreapp3.1\Ahorcado.deps.json
+E:\Proyectos_VisualStudio\Ahorcado-NET-Agiles\Ahorcado\bin\Debug\netcoreapp3.1\Ahorcado.runtimeconfig.json
+E:\Proyectos_VisualStudio\Ahorcado-NET-Agiles\Ahorcado\bin\Debug\netcoreapp3.1\Ahorcado.runtimeconfig.dev.json
+E:\Proyectos_VisualStudio\Ahorcado-NET-Agiles\Ahorcado\bin\Debug\netcoreapp3.1\Ahorcado.dll
+E:\Proyectos_VisualStudio\Ahorcado-NET-Agiles\Ahorcado\bin\Debug\netcoreapp3.1\Ahorcado.pdb
+E:\Proyectos_VisualStudio\Ahorcado-NET-Agiles\Ahorcado\obj\Debug\netcoreapp3.1\Ahorcado.csproj.AssemblyReference.cache
+E:\Proyectos_VisualStudio\Ahorcado-NET-Agiles\Ahorcado\obj\Debug\netcoreapp3.1\Ahorcado.AssemblyInfoInputs.cache
+E:\Proyectos_VisualStudio\Ahorcado-NET-Agiles\Ahorcado\obj\Debug\netcoreapp3.1\Ahorcado.AssemblyInfo.cs
+E:\Proyectos_VisualStudio\Ahorcado-NET-Agiles\Ahorcado\obj\Debug\netcoreapp3.1\Ahorcado.csproj.CoreCompileInputs.cache
+E:\Proyectos_VisualStudio\Ahorcado-NET-Agiles\Ahorcado\obj\Debug\netcoreapp3.1\Ahorcado.dll
+E:\Proyectos_VisualStudio\Ahorcado-NET-Agiles\Ahorcado\obj\Debug\netcoreapp3.1\Ahorcado.pdb
+E:\Proyectos_VisualStudio\Ahorcado-NET-Agiles\Ahorcado\obj\Debug\netcoreapp3.1\Ahorcado.genruntimeconfig.cache
