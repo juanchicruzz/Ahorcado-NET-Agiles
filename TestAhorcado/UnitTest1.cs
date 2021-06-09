@@ -10,7 +10,7 @@ namespace Ahorcado.Test
         {
             Ahorcado newGame = new Ahorcado("AUTO");
 
-            Assert.Equal("_ _ _ _", newGame.printword);
+            Assert.Equal("_ _ _ _", newGame.printword());
         }
 
         [Fact]
@@ -66,8 +66,8 @@ namespace Ahorcado.Test
         {
             Ahorcado newGame = new Ahorcado("AUTO");
 
-            newGame.ValidateLetter('a');
-            Assert.Equal("A _ _ _", newGame.printword);
+            newGame.EnterLetter('a');
+            Assert.Equal("A _ _ _", newGame.printword());
         }
 
     }
