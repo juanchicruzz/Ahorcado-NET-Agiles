@@ -64,10 +64,25 @@ namespace Ahorcado.Test
         [Fact]
         public void test_correct_letter_printword()
         {
-            Ahorcado newGame = new Ahorcado("AUTO");
+            Ahorcado newGame = new Ahorcado("AUTOMATICO");
 
-            newGame.EnterLetter('a');
-            Assert.Equal("A _ _ _", newGame.printword());
+            newGame.EnterLetter('A');
+            Assert.Equal("A _ _ _ _ A _ _ _ _", newGame.printword());
+        }
+        [Fact]
+        public void test_correct_guessed_word()
+        {
+            Ahorcado newGame = new Ahorcado("AUTOMATICO");
+
+            Assert.True(newGame.EnterWord("AUTOMATICO"));
+            Assert.Equal("A U T O M A T I C O", newGame.printword());
+        }
+        [Fact]
+        public void test_incorrect_guessed_word()
+        {
+            Ahorcado newGame = new Ahorcado("AUTOMATICO");
+
+            Assert.False(newGame.EnterWord("AUTOTATICO"));
         }
 
     }
