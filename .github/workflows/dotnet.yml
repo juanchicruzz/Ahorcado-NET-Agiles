@@ -26,7 +26,7 @@ jobs:
     - name: Test
       working-directory: ./TestAhorcado
       run: dotnet test --no-build --verbosity normal
-    - name: Code Coverage Report
-      uses: romeovs/lcov-reporter-action@v0.2.16
-      with:
-        lcov-file: ./coverage/lcov.info
+    - name: Generate coverage report
+      run: |
+        cd ./TestAhorcado
+        dotnet test /p:CollectCoverage=true /p:CoverletOutput=TestResults/ /p:CoverletOutputFormat=lcov
