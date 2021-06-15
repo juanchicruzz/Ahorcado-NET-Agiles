@@ -221,7 +221,7 @@ namespace Ahorcado.Test
             controller.EnterLetter('L');
             controller.EnterLetter('R');
             controller.EnterLetter('Z');
-            controller.EnterLetter('Ñ');
+            controller.EnterLetter('J');
 
             Assert.Equal(0, controller.GetPoints());
         }
@@ -241,7 +241,7 @@ namespace Ahorcado.Test
             controller.EnterLetter('L');
             controller.EnterLetter('R');
             controller.EnterLetter('Z');
-            controller.EnterLetter('Ñ');
+            controller.EnterLetter('J');
 
             Assert.Equal(0, controller.GetPoints());
         }
