@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "d2q6yZPVjiEclnmzzKPy0f8HPwbHSXAPR+ODusOBFY6hS0CKfS5Y+++JYEptGy0+X70RZ9tk7lXyoFDVTzPTBg==",
+  "dgSpecHash": "VshPLwV62QlOvyaOQx/ns/tPnK18rEOekh+v2zyv+vCbDqCmBPJwi4ufNtPkerkpZxwhegOguADaPRzL0KfmGw==",
   "success": true,
   "projectFilePath": "C:\\@F8\\agiles-practica\\Ahorcado-NET-Agiles\\TestAhorcado\\TestAhorcado.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Cufa\\.nuget\\packages\\coverlet.collector\\1.3.0\\coverlet.collector.1.3.0.nupkg.sha512",
+    "C:\\Users\\Cufa\\.nuget\\packages\\coverlet.msbuild\\3.0.3\\coverlet.msbuild.3.0.3.nupkg.sha512",
     "C:\\Users\\Cufa\\.nuget\\packages\\microsoft.codecoverage\\16.7.1\\microsoft.codecoverage.16.7.1.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.csharp\\4.0.1\\microsoft.csharp.4.0.1.nupkg.sha512",
     "C:\\Users\\Cufa\\.nuget\\packages\\microsoft.net.test.sdk\\16.7.1\\microsoft.net.test.sdk.16.7.1.nupkg.sha512",
