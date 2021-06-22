@@ -25,4 +25,4 @@ jobs:
       run: dotnet build --no-restore
     - name: Test and Code Coverage
       working-directory: ./TestAhorcado
-      run: dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=opencover
+      run: dotnet test --results-directory:"./coverage" /p:CollectCoverage=true /p:CoverletOutputFormat=opencover
