@@ -3,9 +3,14 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31321.278
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ahorcado", "Ahorcado.csproj", "{A1C1E144-5AEC-4C4B-B642-B7E7326D59A6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ahorcado", "Ahorcado.csproj", "{A1C1E144-5AEC-4C4B-B642-B7E7326D59A6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestAhorcado", "..\TestAhorcado\TestAhorcado.csproj", "{930D9818-1432-420A-9D43-85216CFAB8AC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestAhorcado", "..\TestAhorcado\TestAhorcado.csproj", "{930D9818-1432-420A-9D43-85216CFAB8AC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3FD53A4C-9FE2-4531-AB6D-A9D7899993A3}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

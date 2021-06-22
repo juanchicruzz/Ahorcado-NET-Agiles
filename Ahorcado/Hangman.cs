@@ -18,6 +18,16 @@ namespace Ahorcado
         public bool GuessedTheLetter { get; set; }
         public bool GuessedWholeWord { get; set; }
 
+
+
+
+
+
+
+
+
+
+
         public string PrintWord()
         {
             string op = "";

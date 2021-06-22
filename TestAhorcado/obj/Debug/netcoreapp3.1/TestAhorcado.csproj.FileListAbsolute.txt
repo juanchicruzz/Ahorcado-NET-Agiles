@@ -204,3 +204,4 @@ C:\@F8\agiles-practica\Ahorcado-NET-Agiles\TestAhorcado\obj\Debug\netcoreapp3.1\
 C:\@F8\agiles-practica\Ahorcado-NET-Agiles\TestAhorcado\obj\Debug\netcoreapp3.1\TestAhorcado.dll
 C:\@F8\agiles-practica\Ahorcado-NET-Agiles\TestAhorcado\obj\Debug\netcoreapp3.1\TestAhorcado.pdb
 C:\@F8\agiles-practica\Ahorcado-NET-Agiles\TestAhorcado\obj\Debug\netcoreapp3.1\TestAhorcado.genruntimeconfig.cache
+C:\@F8\agiles-practica\Ahorcado-NET-Agiles\TestAhorcado\obj\Debug\netcoreapp3.1\TestAhorcado.GeneratedMSBuildEditorConfig.editorconfig
