@@ -6,79 +6,79 @@ namespace Ahorcado
 {
     public class HangmanController
     {
-        private Hangman hangman { get; set; }
-        private User sessionUser { get; set; }
+        private Hangman Hangman { get; set; }
+        private User SessionUser { get; set; }
 
         public User Login(string username)
         {
-            sessionUser = new User(username);
-            return sessionUser;
+            SessionUser = new User(username);
+            return SessionUser;
         }
 
         public Hangman StartGame(string word)
         {
-            hangman = new Hangman(word);
+            Hangman = new Hangman(word);
             int position = 0;
-            foreach (char letter in hangman.WordToGuess.ToCharArray())
+            foreach (char letter in Hangman.WordToGuess.ToCharArray())
             {
                 position++;
-                hangman.Letters.Add(new HangmanLetter(position, letter, false));
+                Hangman.Letters.Add(new HangmanLetter(position, letter, false));
             }
-            return hangman;
+            return Hangman;
         }
 
         public Hangman EnterLetter(char letter)
         {
             if (ValidateLetter(letter))
             {
-                IEnumerable<HangmanLetter> foundLetters = hangman.Letters.Where(x => x.Letter == letter);
+                IEnumerable<HangmanLetter> foundLetters = Hangman.Letters.Where(x => x.Letter == letter);
                 foreach (HangmanLetter item in foundLetters)
                 {
                     item.Display = true;
                 }
-                hangman.GuessedTheLetter = true;
-                return hangman;
+                Hangman.GuessedTheLetter = true;
+                return Hangman;
             }
-            if (!hangman.BadLetters.Contains(letter))
+            if (!Hangman.BadLetters.Contains(letter))
             {
-                hangman.BadLetters.Add(letter);
-                hangman.Lifes -= 1;
+                Hangman.BadLetters.Add(letter);
+                Hangman.Lifes -= 1;
             }
-            hangman.GuessedTheLetter = false;
-            return hangman;
+            Hangman.GuessedTheLetter = false;
+            return Hangman;
         }
 
         public Hangman EnterWord(string word)
         {
-            if (hangman.WordToGuess == word.ToUpper())
+            if (Hangman.WordToGuess == word.ToUpper())
             {
-                foreach (HangmanLetter item in hangman.Letters)
+                foreach (HangmanLetter item in Hangman.Letters)
                 {
                     item.Display = true;
                 }
-                hangman.GuessedWholeWord = true;
+                Hangman.GuessedWholeWord = true;
             } else
             {
-                hangman.GuessedWholeWord = false;
-                hangman.Lifes -= 2;
+                Hangman.GuessedWholeWord = false;
+                Hangman.Lifes -= 2;
             }
-            return hangman;
+            return Hangman;
         }
 
         public int GetPoints()
         {
-            if (hangman.Lifes <= 0)
+            if (Hangman.Lifes <= 0)
             {
                 return 0;
             }
             else
             {
                 int extraPoints = 0;
-                if (hangman.GuessedWholeWord)
+                if (Hangman.GuessedWholeWord)
                 {
                     extraPoints = Constant.POINTS_PER_WORD;
                 }
-                return Constant.POINTS_FOR_WINNING - (hangman.BadLetters.Count * Constant.POINTS_LESS_BY_MISTAKE) + extraPoints;
+                return Constant.POINTS_FOR_WINNING - (Hangman.BadLetters.Count * Constant.POINTS_LESS_BY_MISTAKE) + extraPoints;
             }
         }
 
@@ -88,7 +88,7 @@ namespace Ahorcado
             {
                 throw new ArgumentException("El caracter ingresado no es una letra.");
             }
-            return hangman.WordToGuess.Contains(Char.ToUpper(letter));
+            return Hangman.WordToGuess.Contains(Char.ToUpper(letter));
         }
     }
 }

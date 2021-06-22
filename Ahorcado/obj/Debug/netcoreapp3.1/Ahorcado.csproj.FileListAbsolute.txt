@@ -24,3 +24,4 @@ C:\@F8\agiles-practica\Ahorcado-NET-Agiles\Ahorcado\obj\Debug\netcoreapp3.1\Ahor
 C:\@F8\agiles-practica\Ahorcado-NET-Agiles\Ahorcado\obj\Debug\netcoreapp3.1\Ahorcado.dll
 C:\@F8\agiles-practica\Ahorcado-NET-Agiles\Ahorcado\obj\Debug\netcoreapp3.1\Ahorcado.pdb
 C:\@F8\agiles-practica\Ahorcado-NET-Agiles\Ahorcado\obj\Debug\netcoreapp3.1\Ahorcado.genruntimeconfig.cache
+C:\@F8\agiles-practica\Ahorcado-NET-Agiles\Ahorcado\obj\Debug\netcoreapp3.1\Ahorcado.GeneratedMSBuildEditorConfig.editorconfig

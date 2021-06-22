@@ -7,7 +7,7 @@ namespace Ahorcado.Test
     public class HangmanTest
     {
         [Fact]
-        public void test_startgame()
+        public void Test_startgame()
         {
             HangmanController controller = new HangmanController();
             
@@ -17,7 +17,7 @@ namespace Ahorcado.Test
         }
 
         [Fact]
-        public void test_enter_correct_letter()
+        public void Test_enter_correct_letter()
         {
             HangmanController controller = new HangmanController();
             controller.StartGame("AUTOMATICO");
@@ -28,7 +28,7 @@ namespace Ahorcado.Test
         }
 
         [Fact]
-        public void test_enter_non_correct_letter()
+        public void Test_enter_non_correct_letter()
         {
             HangmanController controller = new HangmanController();
             controller.StartGame("AUTOMATICO");
@@ -39,7 +39,7 @@ namespace Ahorcado.Test
         }
 
         [Fact]
-        public void test_enter_correct_letter_casesensitive()
+        public void Test_enter_correct_letter_casesensitive()
         {
             HangmanController controller = new HangmanController();
             controller.StartGame("AUTOMATICO");
@@ -50,7 +50,7 @@ namespace Ahorcado.Test
         }
 
         [Fact]
-        public void test_enter_non_letter_number()
+        public void Test_enter_non_letter_number()
         {
             HangmanController controller = new HangmanController();
             controller.StartGame("AUTOMATICO");
@@ -61,7 +61,7 @@ namespace Ahorcado.Test
         }
 
         [Fact]
-        public void test_enter_non_letter_space()
+        public void Test_enter_non_letter_space()
         {
             HangmanController controller = new HangmanController();
             controller.StartGame("AUTOMATICO");
@@ -72,7 +72,7 @@ namespace Ahorcado.Test
         }
 
         [Fact]
-        public void test_enter_non_letter_symbol()
+        public void Test_enter_non_letter_symbol()
         {
             HangmanController controller = new HangmanController();
             controller.StartGame("AUTOMATICO");
@@ -83,7 +83,7 @@ namespace Ahorcado.Test
         }
 
         [Fact]
-        public void test_correct_letter_print_word()
+        public void Test_correct_letter_print_word()
         {
             HangmanController controller = new HangmanController();
             controller.StartGame("AUTOMATICO");
@@ -94,7 +94,7 @@ namespace Ahorcado.Test
         }
 
         [Fact]
-        public void test_correct_guessed_word()
+        public void Test_correct_guessed_word()
         {
             HangmanController controller = new HangmanController();
             controller.StartGame("AUTOMATICO");
@@ -104,7 +104,7 @@ namespace Ahorcado.Test
             Assert.Equal("A U T O M A T I C O", result.PrintWord());
         }
         [Fact]
-        public void test_incorrect_guessed_word()
+        public void Test_incorrect_guessed_word()
         {
             HangmanController controller = new HangmanController();
             controller.StartGame("AUTOMATICO");
@@ -115,7 +115,7 @@ namespace Ahorcado.Test
         }
 
         [Fact]
-        public void test_incorrect_letters()
+        public void Test_incorrect_letters()
         {
             HangmanController controller = new HangmanController();
             controller.StartGame("AUTOMATICO");
@@ -129,7 +129,7 @@ namespace Ahorcado.Test
         }
 
         [Fact]
-        public void test_incorrect_letters_duplicates()
+        public void Test_incorrect_letters_duplicates()
         {
             HangmanController controller = new HangmanController();
             controller.StartGame("AUTOMATICO");
@@ -145,7 +145,7 @@ namespace Ahorcado.Test
         }
 
         [Fact]
-        public void test_subtract_lifes()
+        public void Test_subtract_lifes()
         {
             HangmanController controller = new HangmanController();
             controller.StartGame("AUTOMATICO");
@@ -158,7 +158,7 @@ namespace Ahorcado.Test
         }
 
         [Fact]
-        public void test_subtract_lifes_duplicates()
+        public void Test_subtract_lifes_duplicates()
         {
             HangmanController controller = new HangmanController();
             controller.StartGame("AUTOMATICO");
@@ -173,7 +173,7 @@ namespace Ahorcado.Test
         }
 
         [Fact]
-        public void test_get_points()
+        public void Test_get_points()
         {
             HangmanController controller = new HangmanController();
             controller.StartGame("AUTOMATICO");
@@ -190,7 +190,7 @@ namespace Ahorcado.Test
         }
 
         [Fact]
-        public void test_get_points_incorrects()
+        public void Test_get_points_incorrects()
         {
             HangmanController controller = new HangmanController();
             controller.StartGame("AUTOMATICO");
@@ -209,7 +209,7 @@ namespace Ahorcado.Test
         }
 
         [Fact]
-        public void test_get_points_all_incorrects()
+        public void Test_get_points_all_incorrects()
         {
             HangmanController controller = new HangmanController();
             controller.StartGame("AUTOMATICO");
@@ -227,7 +227,7 @@ namespace Ahorcado.Test
         }
 
         [Fact]
-        public void test_get_points_1correct_rest_incorrects()
+        public void Test_get_points_1correct_rest_incorrects()
         {
             HangmanController controller = new HangmanController();
             controller.StartGame("AUTOMATICO");
@@ -247,7 +247,7 @@ namespace Ahorcado.Test
         }
 
         [Fact]
-        public void test_guessed_word_points()
+        public void Test_guessed_word_points()
         {
             HangmanController controller = new HangmanController();
             controller.StartGame("AUTOMATICO");
@@ -258,7 +258,7 @@ namespace Ahorcado.Test
         }
 
         [Fact]
-        public void test_guessed_word_w_errors_points()
+        public void Test_guessed_word_w_errors_points()
         {
             HangmanController controller = new HangmanController();
             controller.StartGame("AUTOMATICO");
@@ -272,7 +272,7 @@ namespace Ahorcado.Test
         }
 
         [Fact]
-        public void test_guessed_word_w_corrects_points()
+        public void Test_guessed_word_w_corrects_points()
         {
             HangmanController controller = new HangmanController();
             controller.StartGame("AUTOMATICO");
@@ -286,7 +286,7 @@ namespace Ahorcado.Test
         }
 
         [Fact]
-        public void test_guessed_word_w_corrects_and_errors_points()
+        public void Test_guessed_word_w_corrects_and_errors_points()
         {
             HangmanController controller = new HangmanController();
             controller.StartGame("AUTOMATICO");
@@ -301,7 +301,7 @@ namespace Ahorcado.Test
         }
 
         [Fact]
-        public void test_enter_user_name()
+        public void Test_enter_user_name()
         {
             HangmanController controller = new HangmanController();
 
