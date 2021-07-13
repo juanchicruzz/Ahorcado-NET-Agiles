@@ -4,14 +4,14 @@
     "C:\\@F8\\agiles-practica\\Ahorcado-NET-Agiles\\TestAhorcado\\TestAhorcado.csproj": {}
   },
   "projects": {
-    "C:\\@F8\\agiles-practica\\Ahorcado-NET-Agiles\\Ahorcado\\Ahorcado.csproj": {
+    "C:\\@F8\\agiles-practica\\Ahorcado-NET-Agiles\\Hangman\\Hangman.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\@F8\\agiles-practica\\Ahorcado-NET-Agiles\\Ahorcado\\Ahorcado.csproj",
-        "projectName": "Ahorcado",
-        "projectPath": "C:\\@F8\\agiles-practica\\Ahorcado-NET-Agiles\\Ahorcado\\Ahorcado.csproj",
+        "projectUniqueName": "C:\\@F8\\agiles-practica\\Ahorcado-NET-Agiles\\Hangman\\Hangman.csproj",
+        "projectName": "Hangman",
+        "projectPath": "C:\\@F8\\agiles-practica\\Ahorcado-NET-Agiles\\Hangman\\Hangman.csproj",
         "packagesPath": "C:\\Users\\Cufa\\.nuget\\packages\\",
-        "outputPath": "C:\\@F8\\agiles-practica\\Ahorcado-NET-Agiles\\Ahorcado\\obj\\",
+        "outputPath": "C:\\@F8\\agiles-practica\\Ahorcado-NET-Agiles\\Hangman\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -43,11 +43,9 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
-            "Microsoft.CodeAnalysis.NetAnalyzers": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
+            "Newtonsoft.Json": {
               "target": "Package",
-              "version": "[5.0.3, )"
+              "version": "[13.0.1, )"
             }
           },
           "imports": [
@@ -61,6 +59,9 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
@@ -96,8 +97,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\@F8\\agiles-practica\\Ahorcado-NET-Agiles\\Ahorcado\\Ahorcado.csproj": {
-                "projectPath": "C:\\@F8\\agiles-practica\\Ahorcado-NET-Agiles\\Ahorcado\\Ahorcado.csproj"
+              "C:\\@F8\\agiles-practica\\Ahorcado-NET-Agiles\\Hangman\\Hangman.csproj": {
+                "projectPath": "C:\\@F8\\agiles-practica\\Ahorcado-NET-Agiles\\Hangman\\Hangman.csproj"
               }
             }
           }

@@ -1,0 +1,122 @@
+﻿@model Hangman.Models.HangmanModel
+@{
+    ViewBag.Title = "Ahorcado";
+}
+
+<h2>A jugar <span class="text-success">@( @Model.PlayingPlayer1 ? @Model.Player1 : @Model.Player2 )</span></h2>
+
+@using (Html.BeginForm())
+{
+    @Html.HiddenFor(m => m.WordToGuess)
+    <form>
+        <div class="d-flex justify-content-center">
+            <div class="col-md-6 card">
+                @if (Model.Playing)
+                {
+                    <div class="form-group">
+                        <label for="username">Ingrese una letra o palabra</label>
+                        @Html.TextBoxFor(m => m.Attempt, new { @class = "form-control", autofocus = "autofocus", @id = "attempt" })
+                        @Html.ValidationMessageFor(model => model.Attempt, "", new { @class = "text-danger" })
+                    </div>
+                    <button type="submit" class="btn btn-primary w-25 btn-sm" style="align-self: center;" id="submit">Aceptar</button>
+                }
+                else
+                {
+                    <div class="form-group">
+                        <label for="username">Ingrese una letra o palabra</label>
+                        @Html.TextBoxFor(m => m.Attempt, new { @class = "form-control", @readonly = "readonly", @id = "attempt-disabled" })
+                    </div>
+                    <button type="button" class="btn btn-primary w-25 btn-sm" style="align-self: center;" id="submit-disabled" disabled="disabled">Aceptar</button>
+                }
+                @if (Model.Won || Model.Lost)
+                {
+                    <hr />
+                    if (Model.Won)
+                    {
+                        <h2 class="text-success">Has ganado! :D</h2>
+                    }
+                    if (Model.Lost)
+                    {
+                        <h2 class="text-danger">Has perdido! :'(</h2>
+                    }
+                    <button type="button" class="btn btn-info w-25 btn-sm" style="align-self: center;" id="next-game" onclick="location.href='@Url.Action("StartGame", "Hangman")'">Siguiente jugador</button>
+                }
+                <table class="table mt-2">
+                    <thead>
+                        <tr>
+                            <th>@Model.Player1 (@Model.Player1Played)</th>
+                            <th>@Model.Player2 (@Model.Player2Played)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>@Model.PointsPlayer1</td>
+                            <td>@Model.PointsPlayer2</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-6 card">
+                <span class="arc pl-5 mt-3">
+                    @if (Model.Lifes < 7 && Model.Lifes > 0)
+                    {
+                        <span class="hangman live" id="head">O</span><br />
+                    }
+                    @if (Model.Lifes <= 0)
+                    {
+                        <span class="hangman dead" id="head">O</span><br />
+                    }
+                    @if (Model.Lifes < 5)
+                    {
+                        <span class="hangman" id="left-arm">/</span>
+                    }
+                    @if (Model.Lifes == 5)
+                    {
+                        <span class="hangman text-white" id="left-arm-hidden">/</span>
+                    }
+                    @if (Model.Lifes < 6)
+                    {
+                        <span class="hangman" id="body">|</span>
+                    }
+                    @if (Model.Lifes < 4)
+                    {
+                        <span class="hangman" id="right-arm">\</span><br />
+                    }
+                    @if (Model.Lifes < 3)
+                    {
+                        <span class="hangman" id="left-leg" style="padding-left: 5px;">/ </span>
+                    }
+                    @if (Model.Lifes < 2)
+                    {
+                        <span class="hangman" id="right-leg">\</span>
+                    }
+                </span>
+
+                <span class="word">
+                    @foreach (var item in Model.Letters)
+                    {
+                        @if (item.Display)
+                        {
+                            <span>@item.Letter </span>
+                        }
+                        else
+                        {
+                            <span>_ </span>
+                        }
+                    }
+                </span>
+
+                <h4 class="bad-letters">
+                    Letras erróneas:
+                    @if (Model.BadLetters != null)
+                    {
+                        foreach (var item in Model.BadLetters)
+                        {
+                            <span class="text-danger"> @item</span>
+                        }
+                    }
+                </h4>
+            </div>
+        </div>
+    </form>
+}
