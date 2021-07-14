@@ -10,12 +10,14 @@ namespace Hangman.Models
         {
             this.Player1 = player1;
             this.Player2 = player2;
+            this.Letters = new List<HangmanLetter>();
+            this.BadLetters = new List<char>();
         }
         public string Player1 { get; set; }
         public int Player1Played { get; set; } = 0;
         public string Player2 { get; set; }
         public int Player2Played { get; set; } = 0;
-        public bool PlayingPlayer1 { get; set; } // TODO
+        public bool PlayingPlayer1 { get; set; }
         [Required(ErrorMessage = "El campo es requerido")]
         [RegularExpression(@"^[a-zA-Z]+[ a-zA-Z-_]*$", ErrorMessage = "Debe ingresar solo letras")]
         public string WordToGuess { get; set; }

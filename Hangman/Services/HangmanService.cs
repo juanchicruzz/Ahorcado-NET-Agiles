@@ -35,7 +35,7 @@ namespace Hangman.Services
 
         public HangmanModel SetWordToGuess(string wordToGuess, HangmanModel hangman)
         {
-            hangman.WordToGuess = wordToGuess;
+            hangman.WordToGuess = wordToGuess.ToUpper();
             foreach (char letter in hangman.WordToGuess.ToCharArray())
             {
                 hangman.Letters.Add(new HangmanLetter(letter, false));
@@ -45,6 +45,7 @@ namespace Hangman.Services
         
         public HangmanModel Try(string tried, HangmanModel hangman)
         {
+            tried = tried.ToUpper();
             if (tried.Length > 1)
             {
                 hangman = EnterWord(tried, hangman);
@@ -78,7 +79,7 @@ namespace Hangman.Services
                     if (!hangman.BadLetters.Contains(letter))
                     {
                         hangman.BadLetters.Add(letter);
-                        hangman.Lifes -= 1;
+                        hangman.Lifes--;
                     }
                 }
             }
@@ -91,9 +92,9 @@ namespace Hangman.Services
         }
 
 
-        public HangmanModel EnterWord(string word, HangmanModel hangman)
+        private HangmanModel EnterWord(string word, HangmanModel hangman)
         {
-            if (hangman.WordToGuess == word.ToUpper())
+            if (word == hangman.WordToGuess)
             {
                 foreach (HangmanLetter item in hangman.Letters)
                 {
@@ -119,7 +120,7 @@ namespace Hangman.Services
             return hangman;
         }
 
-        public int GetPoints(HangmanModel hangman)
+        private int GetPoints(HangmanModel hangman)
         {
             if (hangman.Lifes <= 0)
             {

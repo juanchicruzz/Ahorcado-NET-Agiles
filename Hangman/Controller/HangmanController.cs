@@ -41,7 +41,7 @@ namespace Hangman.Controllers
             }
 
             hangman = _hangmanService.SetWordToGuess(
-                hangman.WordToGuess.ToUpper(),
+                hangman.WordToGuess,
                 SessionHelper.GetObjectFromJson<HangmanModel>(HttpContext.Session, "game"));
 
             SessionHelper.SetObjectAsJson(HttpContext.Session, "game", hangman);
@@ -65,7 +65,7 @@ namespace Hangman.Controllers
             }
 
             hangman = _hangmanService.Try(
-                hangman.Attempt.ToUpper(),
+                hangman.Attempt,
                 SessionHelper.GetObjectFromJson<HangmanModel>(HttpContext.Session, "game"));
 
             SessionHelper.SetObjectAsJson(HttpContext.Session, "game", hangman);
