@@ -1,24 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\@F8\\agiles-practica\\Ahorcado-NET-Agiles\\TestAhorcado\\TestAhorcado.csproj": {}
+    "E:\\Proyectos_VisualStudio\\Ahorcado-NET-Agiles\\TestAhorcado\\TestAhorcado.csproj": {}
   },
   "projects": {
-    "C:\\@F8\\agiles-practica\\Ahorcado-NET-Agiles\\Hangman\\Hangman.csproj": {
+    "E:\\Proyectos_VisualStudio\\Ahorcado-NET-Agiles\\Hangman\\Hangman.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\@F8\\agiles-practica\\Ahorcado-NET-Agiles\\Hangman\\Hangman.csproj",
+        "projectUniqueName": "E:\\Proyectos_VisualStudio\\Ahorcado-NET-Agiles\\Hangman\\Hangman.csproj",
         "projectName": "Hangman",
-        "projectPath": "C:\\@F8\\agiles-practica\\Ahorcado-NET-Agiles\\Hangman\\Hangman.csproj",
-        "packagesPath": "C:\\Users\\Cufa\\.nuget\\packages\\",
-        "outputPath": "C:\\@F8\\agiles-practica\\Ahorcado-NET-Agiles\\Hangman\\obj\\",
+        "projectPath": "E:\\Proyectos_VisualStudio\\Ahorcado-NET-Agiles\\Hangman\\Hangman.csproj",
+        "packagesPath": "C:\\Users\\JuanPC\\.nuget\\packages\\",
+        "outputPath": "E:\\Proyectos_VisualStudio\\Ahorcado-NET-Agiles\\Hangman\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Cufa\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\JuanPC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -66,25 +67,26 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\@F8\\agiles-practica\\Ahorcado-NET-Agiles\\TestAhorcado\\TestAhorcado.csproj": {
+    "E:\\Proyectos_VisualStudio\\Ahorcado-NET-Agiles\\TestAhorcado\\TestAhorcado.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\@F8\\agiles-practica\\Ahorcado-NET-Agiles\\TestAhorcado\\TestAhorcado.csproj",
+        "projectUniqueName": "E:\\Proyectos_VisualStudio\\Ahorcado-NET-Agiles\\TestAhorcado\\TestAhorcado.csproj",
         "projectName": "TestAhorcado",
-        "projectPath": "C:\\@F8\\agiles-practica\\Ahorcado-NET-Agiles\\TestAhorcado\\TestAhorcado.csproj",
-        "packagesPath": "C:\\Users\\Cufa\\.nuget\\packages\\",
-        "outputPath": "C:\\@F8\\agiles-practica\\Ahorcado-NET-Agiles\\TestAhorcado\\obj\\",
+        "projectPath": "E:\\Proyectos_VisualStudio\\Ahorcado-NET-Agiles\\TestAhorcado\\TestAhorcado.csproj",
+        "packagesPath": "C:\\Users\\JuanPC\\.nuget\\packages\\",
+        "outputPath": "E:\\Proyectos_VisualStudio\\Ahorcado-NET-Agiles\\TestAhorcado\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Cufa\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\JuanPC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -97,8 +99,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\@F8\\agiles-practica\\Ahorcado-NET-Agiles\\Hangman\\Hangman.csproj": {
-                "projectPath": "C:\\@F8\\agiles-practica\\Ahorcado-NET-Agiles\\Hangman\\Hangman.csproj"
+              "E:\\Proyectos_VisualStudio\\Ahorcado-NET-Agiles\\Hangman\\Hangman.csproj": {
+                "projectPath": "E:\\Proyectos_VisualStudio\\Ahorcado-NET-Agiles\\Hangman\\Hangman.csproj"
               }
             }
           }
@@ -155,7 +157,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

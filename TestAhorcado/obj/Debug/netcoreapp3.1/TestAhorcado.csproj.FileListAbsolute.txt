@@ -1,8 +1,4 @@
 E:\Proyectos_VisualStudio\Ahorcado-NET-Agiles\TestAhorcado\bin\Debug\netcoreapp3.1\testhost.dll
-E:\Proyectos_VisualStudio\Ahorcado-NET-Agiles\TestAhorcado\bin\Debug\netcoreapp3.1\Ahorcado.deps.json
-E:\Proyectos_VisualStudio\Ahorcado-NET-Agiles\TestAhorcado\bin\Debug\netcoreapp3.1\Ahorcado.runtimeconfig.json
-E:\Proyectos_VisualStudio\Ahorcado-NET-Agiles\TestAhorcado\bin\Debug\netcoreapp3.1\Ahorcado.runtimeconfig.dev.json
-E:\Proyectos_VisualStudio\Ahorcado-NET-Agiles\TestAhorcado\bin\Debug\netcoreapp3.1\Ahorcado.exe
 E:\Proyectos_VisualStudio\Ahorcado-NET-Agiles\TestAhorcado\bin\Debug\netcoreapp3.1\testhost.exe
 E:\Proyectos_VisualStudio\Ahorcado-NET-Agiles\TestAhorcado\bin\Debug\netcoreapp3.1\xunit.runner.visualstudio.dotnetcore.testadapter.dll
 E:\Proyectos_VisualStudio\Ahorcado-NET-Agiles\TestAhorcado\bin\Debug\netcoreapp3.1\xunit.runner.reporters.netcoreapp10.dll
@@ -91,8 +87,6 @@ E:\Proyectos_VisualStudio\Ahorcado-NET-Agiles\TestAhorcado\bin\Debug\netcoreapp3
 E:\Proyectos_VisualStudio\Ahorcado-NET-Agiles\TestAhorcado\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
 E:\Proyectos_VisualStudio\Ahorcado-NET-Agiles\TestAhorcado\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
 E:\Proyectos_VisualStudio\Ahorcado-NET-Agiles\TestAhorcado\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
-E:\Proyectos_VisualStudio\Ahorcado-NET-Agiles\TestAhorcado\bin\Debug\netcoreapp3.1\Ahorcado.dll
-E:\Proyectos_VisualStudio\Ahorcado-NET-Agiles\TestAhorcado\bin\Debug\netcoreapp3.1\Ahorcado.pdb
 E:\Proyectos_VisualStudio\Ahorcado-NET-Agiles\TestAhorcado\obj\Debug\netcoreapp3.1\TestAhorcado.csproj.AssemblyReference.cache
 E:\Proyectos_VisualStudio\Ahorcado-NET-Agiles\TestAhorcado\obj\Debug\netcoreapp3.1\TestAhorcado.AssemblyInfoInputs.cache
 E:\Proyectos_VisualStudio\Ahorcado-NET-Agiles\TestAhorcado\obj\Debug\netcoreapp3.1\TestAhorcado.AssemblyInfo.cs
@@ -209,3 +203,14 @@ C:\@F8\agiles-practica\Ahorcado-NET-Agiles\TestAhorcado\obj\Debug\netcoreapp3.1\
 C:\@F8\agiles-practica\Ahorcado-NET-Agiles\TestAhorcado\obj\Debug\netcoreapp3.1\TestAhorcado.dll
 C:\@F8\agiles-practica\Ahorcado-NET-Agiles\TestAhorcado\obj\Debug\netcoreapp3.1\TestAhorcado.pdb
 C:\@F8\agiles-practica\Ahorcado-NET-Agiles\TestAhorcado\obj\Debug\netcoreapp3.1\TestAhorcado.genruntimeconfig.cache
+E:\Proyectos_VisualStudio\Ahorcado-NET-Agiles\TestAhorcado\bin\Debug\netcoreapp3.1\Hangman.Views.dll
+E:\Proyectos_VisualStudio\Ahorcado-NET-Agiles\TestAhorcado\bin\Debug\netcoreapp3.1\Hangman.Views.pdb
+E:\Proyectos_VisualStudio\Ahorcado-NET-Agiles\TestAhorcado\bin\Debug\netcoreapp3.1\Hangman.deps.json
+E:\Proyectos_VisualStudio\Ahorcado-NET-Agiles\TestAhorcado\bin\Debug\netcoreapp3.1\Hangman.runtimeconfig.json
+E:\Proyectos_VisualStudio\Ahorcado-NET-Agiles\TestAhorcado\bin\Debug\netcoreapp3.1\Hangman.runtimeconfig.dev.json
+E:\Proyectos_VisualStudio\Ahorcado-NET-Agiles\TestAhorcado\bin\Debug\netcoreapp3.1\appsettings.Development.json
+E:\Proyectos_VisualStudio\Ahorcado-NET-Agiles\TestAhorcado\bin\Debug\netcoreapp3.1\appsettings.json
+E:\Proyectos_VisualStudio\Ahorcado-NET-Agiles\TestAhorcado\bin\Debug\netcoreapp3.1\Hangman.exe
+E:\Proyectos_VisualStudio\Ahorcado-NET-Agiles\TestAhorcado\bin\Debug\netcoreapp3.1\Hangman.dll
+E:\Proyectos_VisualStudio\Ahorcado-NET-Agiles\TestAhorcado\bin\Debug\netcoreapp3.1\Hangman.pdb
+E:\Proyectos_VisualStudio\Ahorcado-NET-Agiles\TestAhorcado\obj\Debug\netcoreapp3.1\TestAhorcado.GeneratedMSBuildEditorConfig.editorconfig
