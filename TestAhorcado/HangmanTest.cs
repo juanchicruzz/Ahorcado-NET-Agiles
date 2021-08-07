@@ -1,5 +1,7 @@
+using Hangman.Controllers;
 using Hangman.Models;
 using Hangman.Services;
+using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using Xunit;
 
@@ -7,6 +9,18 @@ namespace Ahorcado.Test
 {
     public class HangmanTest
     {
+        [Fact]
+        public void Test_player_index_get()
+        {
+            HangmanService hangmanService = new HangmanService();
+            PlayerController playerController = new PlayerController(hangmanService);
+
+            ViewResult result = playerController.Index() as ViewResult;
+
+            Assert.NotNull(result.Model);
+        }
+
+
         [Fact]
         public void Test_set_players()
         {
@@ -26,7 +40,7 @@ namespace Ahorcado.Test
 
             HangmanModel result = hangmanService.StartGame(hangman);
 
-            Assert.True(result.PlayingPlayer1);
+            Assert.True(result.GameOwnerIsPlayer1);
             Assert.Equal(new List<HangmanLetter>(), result.Letters);
             Assert.Equal(new List<char>(), result.BadLetters);
             Assert.Equal(Constant.LIFES, result.Lifes);
@@ -343,7 +357,7 @@ namespace Ahorcado.Test
             result = hangmanService.Try("A", hangman);
             result = hangmanService.Try("S", hangman);
 
-            Assert.Equal(Constant.POINTS_FOR_WINNING, result.PointsPlayer1);
+            Assert.Equal(Constant.POINTS_FOR_WINNING, result.PointsPlayer2);
         }
 
         [Fact]
@@ -358,7 +372,7 @@ namespace Ahorcado.Test
             result = hangmanService.Try("A", hangman);
             result = hangmanService.Try("S", hangman);
 
-            Assert.Equal(Constant.POINTS_FOR_WINNING - (hangman.BadLetters.Count * Constant.POINTS_LESS_BY_MISTAKE), result.PointsPlayer1);
+            Assert.Equal(Constant.POINTS_FOR_WINNING - (hangman.BadLetters.Count * Constant.POINTS_LESS_BY_MISTAKE), result.PointsPlayer2);
         }
 
         [Fact]
@@ -371,7 +385,7 @@ namespace Ahorcado.Test
 
             HangmanModel result = hangmanService.Try("CASA", hangman);
 
-            Assert.Equal(Constant.POINTS_FOR_WINNING - (hangman.BadLetters.Count * Constant.POINTS_LESS_BY_MISTAKE) + Constant.POINTS_PER_WORD, result.PointsPlayer1);
+            Assert.Equal(Constant.POINTS_FOR_WINNING - (hangman.BadLetters.Count * Constant.POINTS_LESS_BY_MISTAKE) + Constant.POINTS_PER_WORD, result.PointsPlayer2);
         }
 
         [Fact]

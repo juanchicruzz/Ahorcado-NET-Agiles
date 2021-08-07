@@ -3,7 +3,7 @@
     ViewBag.Title = "Ahorcado";
 }
 
-<h2>A jugar <span class="text-success">@( @Model.PlayingPlayer1 ? @Model.Player1 : @Model.Player2 )</span></h2>
+<h2>A jugar <span class="text-success">@( Model.GameOwnerIsPlayer1 ? Model.Player2 : Model.Player1 )</span></h2>
 
 @using (Html.BeginForm())
 {

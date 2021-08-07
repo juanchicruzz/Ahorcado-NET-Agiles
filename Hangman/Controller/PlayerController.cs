@@ -15,7 +15,10 @@ namespace Hangman.Controllers
         [HttpGet]
         public IActionResult Index()
         {
-            HttpContext.Session.Remove("game");
+            if (HttpContext != null && SessionHelper.GetObjectFromJson<HangmanModel>(HttpContext.Session, "game") != null)
+            {
+                HttpContext.Session.Remove("game");
+            }
             return View(new PlayerModel());
         }
 

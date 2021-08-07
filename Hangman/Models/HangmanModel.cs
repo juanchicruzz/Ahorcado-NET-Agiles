@@ -17,7 +17,7 @@ namespace Hangman.Models
         public int Player1Played { get; set; } = 0;
         public string Player2 { get; set; }
         public int Player2Played { get; set; } = 0;
-        public bool PlayingPlayer1 { get; set; }
+        public bool GameOwnerIsPlayer1 { get; set; }
         [Required(ErrorMessage = "El campo es requerido")]
         [RegularExpression(@"^[a-zA-Z]+[ a-zA-Z-_]*$", ErrorMessage = "Debe ingresar solo letras")]
         public string WordToGuess { get; set; }
