@@ -14,7 +14,7 @@ namespace Hangman.Services
 
         public HangmanModel StartGame(HangmanModel hangman)
         {
-            hangman.PlayingPlayer1 = !hangman.PlayingPlayer1;
+            hangman.GameOwnerIsPlayer1 = !hangman.GameOwnerIsPlayer1;
             hangman.Letters = new List<HangmanLetter>();
             hangman.BadLetters = new List<char>();
             hangman.Lifes = Constant.LIFES;
@@ -22,13 +22,13 @@ namespace Hangman.Services
             hangman.Won = false;
             hangman.Lost = false;
             hangman.GuessedWholeWord = false;
-            if (hangman.PlayingPlayer1)
+            if (hangman.GameOwnerIsPlayer1)
             {
-                hangman.Player1Played++;
+                hangman.Player2Played++;
             }
             else
             {
-                hangman.Player2Played++;
+                hangman.Player1Played++;
             }
             return hangman;
         }
@@ -64,13 +64,13 @@ namespace Hangman.Services
                     {
                         hangman.Playing = false;
                         hangman.Won = true;
-                        if (hangman.PlayingPlayer1)
+                        if (hangman.GameOwnerIsPlayer1)
                         {
-                            hangman.PointsPlayer1 += GetPoints(hangman);
+                            hangman.PointsPlayer2 += GetPoints(hangman);
                         }
                         else
                         {
-                            hangman.PointsPlayer2 += GetPoints(hangman);
+                            hangman.PointsPlayer1 += GetPoints(hangman);
                         }
                     }
                 }
@@ -103,13 +103,13 @@ namespace Hangman.Services
                 hangman.GuessedWholeWord = true;
                 hangman.Playing = false;
                 hangman.Won = true;
-                if (hangman.PlayingPlayer1)
+                if (hangman.GameOwnerIsPlayer1)
                 {
-                    hangman.PointsPlayer1 += GetPoints(hangman);
+                    hangman.PointsPlayer2 += GetPoints(hangman);
                 }
                 else
                 {
-                    hangman.PointsPlayer2 += GetPoints(hangman);
+                    hangman.PointsPlayer1 += GetPoints(hangman);
                 }
             }
             else

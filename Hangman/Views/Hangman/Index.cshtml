@@ -13,7 +13,7 @@
                 <div class="form-group">
                     <label for="username">
                         Jugador <span class="text-success">
-                            @( @Model.PlayingPlayer1 ? @Model.Player1 : @Model.Player2 )
+                            @( @Model.GameOwnerIsPlayer1 ? @Model.Player1 : @Model.Player2 )
                         </span> ingrese palabra a adivinar
                     </label>
                     @Html.PasswordFor(m => m.WordToGuess, new { @class = "form-control", autofocus = "autofocus", @id = "wordToGuess" })
