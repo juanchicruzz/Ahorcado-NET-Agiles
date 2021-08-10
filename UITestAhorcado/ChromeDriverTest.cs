@@ -13,6 +13,7 @@ namespace UITestAhorcado
     public class ChromeDriverTest
     {
         static Random random = new Random();
+        static string url = "https://hangmanappagiles.herokuapp.com/";
         public static char GetLetter()
         {
             // This method returns a random lowercase between a and z
@@ -30,7 +31,7 @@ namespace UITestAhorcado
         {
             // Initialize chrome driver 
             _driver = new ChromeDriver();
-            baseURL = "http://localhost:8080/";
+            baseURL = url;
         }
 
         [Given("the the player1 is JUAN and the player2 is FRANCO")]
@@ -170,7 +171,7 @@ namespace UITestAhorcado
         public void gameRestarted()
         {
             string currentUrl = _driver.Url;
-            Assert.AreEqual("http://localhost:8080/", currentUrl);
+            Assert.AreEqual(url, currentUrl);
         }
         [Then("the player loses the game")]
         public void hasperdido()
