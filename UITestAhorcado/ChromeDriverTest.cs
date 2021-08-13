@@ -30,7 +30,11 @@ namespace UITestAhorcado
         public void TestInitialize()
         {
             // Initialize chrome driver 
-            _driver = new ChromeDriver();
+            var chromeOptions = new ChromeOptions();
+            chromeOptions.AddArguments("headless");
+            chromeOptions.AddArguments("--no-sandbox");
+            chromeOptions.AddArguments("--disable-dev-shm-usage");
+            _driver = new ChromeDriver(options:chromeOptions);
             baseURL = url;
         }
 
