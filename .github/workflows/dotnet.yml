@@ -26,3 +26,6 @@ jobs:
     - name: Test and Code Coverage
       working-directory: ./TestAhorcado
       run: dotnet test --results-directory:./coverage /p:CollectCoverage=true /p:CoverletOutputFormat=opencover
+    - name: testUI
+      working-directory: ./UITestAhorcado
+      run: dotnet test
