@@ -29,3 +29,12 @@ jobs:
     - name: testUI
       working-directory: ./UITestAhorcado
       run: dotnet test
+    - name: Static Code Analyst
+      uses: sonarsource/sonarcloud-github-action@master
+      env:
+        GITHUB_TOKEN: ${{ secrets.SN_TOKEN }}
+        SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+      with:
+        args: >
+          -Dsonar.projectKey=juanchicruzz_Ahorcado-NET-Agiles
+          -Dsonar.organization=juanchicruzz
