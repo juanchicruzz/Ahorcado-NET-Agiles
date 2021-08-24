@@ -38,6 +38,6 @@ jobs:
         args: >
           -Dsonar.projectKey=juanchicruzz_Ahorcado-NET-Agiles
           -Dsonar.organization=juanchicruzz
-          -Dsonar.exclusions="/wwwroot/lib/**"
-          -Dsonar.cs.opencover.reportsPaths=/home/runner/work/Ahorcado-NET-Agiles/Ahorcado-NET-Agiles/TestAhorcado/coverage.opencover.xml
-          -Dsonar.cs.vstest.reportsPaths=**/home/runner/work/Ahorcado-NET-Agiles/Ahorcado-NET-Agiles/TestAhorcado/coverage.opencover.xml
+          -Dsonar.exclusions="./Hangman/wwwroot/**"
+          -Dsonar.cs.opencover.reportsPaths=./coverage**
+          -Dsonar.cs.vstest.reportsPaths=./coverage**
