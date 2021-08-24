@@ -38,3 +38,4 @@ jobs:
         args: >
           -Dsonar.projectKey=juanchicruzz_Ahorcado-NET-Agiles
           -Dsonar.organization=juanchicruzz
+          -Dsonar.exclusions="/wwwroot/lib/**"
