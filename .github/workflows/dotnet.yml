@@ -18,10 +18,10 @@ jobs:
       with:
         dotnet-version: 3.1.x
     - name: Restore dependencies
-      working-directory: ./Ahorcado
+      working-directory: ./Hangman
       run: dotnet restore
     - name: Build
-      working-directory: ./Ahorcado
+      working-directory: ./Hangman
       run: dotnet build --no-restore
     - name: Test and Code Coverage
       working-directory: ./TestAhorcado
