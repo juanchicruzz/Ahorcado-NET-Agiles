@@ -20,6 +20,8 @@ jobs:
     - name: Restore dependencies
       working-directory: ./Hangman
       run: dotnet restore
+    - name: sonar
+      run: dotnet tool install --global dotnet-sonarscanner
     - name: Build
       working-directory: ./Hangman
       run: dotnet build --no-restore
