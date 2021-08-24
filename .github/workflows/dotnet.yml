@@ -31,28 +31,28 @@ jobs:
     - name: testUI
       working-directory: ./UITestAhorcado
       run: dotnet test
-    - name: dotnet-sonarcloud-analysis
-  # You may pin to the exact commit or the version.
-  # uses: spoland/dotnet-sonarcloud-analysis@df570921891576c845d66818902f5342b40c3cd8
-      uses: spoland/dotnet-sonarcloud-analysis@v1.0
+#    - name: dotnet-sonarcloud-analysis
+#  # You may pin to the exact commit or the version.
+#  # uses: spoland/dotnet-sonarcloud-analysis@df570921891576c845d66818902f5342b40c3cd8
+#      uses: spoland/dotnet-sonarcloud-analysis@v1.0
+#      with:
+#    # Specifies the key of the analyzed project in SonarCloud
+#        project-key: juanchicruzz_Ahorcado-NET-Agiles
+#    # Specifies the SonarCloud organization
+#        sonar-organization: juanchicruzz
+#    # Specifies the access token to authenticate with to SonarCloud
+#        sonar-host-url: http://localhost:9000
+#      # Path to OpenCover coverage reports
+#       opencover-reports-paths: ./coverage**
+    - name: Static Code Analyst
+      uses: sonarsource/sonarcloud-github-action@master
+      env:
+        GITHUB_TOKEN: ${{ secrets.SN_TOKEN }}
+        SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
       with:
-    # Specifies the key of the analyzed project in SonarCloud
-        project-key: juanchicruzz_Ahorcado-NET-Agiles
-    # Specifies the SonarCloud organization
-        sonar-organization: juanchicruzz
-    # Specifies the access token to authenticate with to SonarCloud
-        sonar-host-url: http://localhost:9000
-      # Path to OpenCover coverage reports
-        opencover-reports-paths: ./coverage**
-##    - name: Static Code Analyst
-##      uses: sonarsource/sonarcloud-github-action@master
-##      env:
-##        GITHUB_TOKEN: ${{ secrets.SN_TOKEN }}
-##        SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-##      with:
-##        args: >
-##          -Dsonar.projectKey=juanchicruzz_Ahorcado-NET-Agiles
-##          -Dsonar.organization=juanchicruzz
-##          -Dsonar.exclusions="./Hangman/wwwroot/**"
-##          -Dsonar.cs.opencover.reportsPaths=./coverage**
-##          -Dsonar.cs.vstest.reportsPaths=./coverage**
+        args: >
+          -Dsonar.projectKey=juanchicruzz_Ahorcado-NET-Agiles
+          -Dsonar.organization=juanchicruzz
+          -Dsonar.exclusions="./Hangman/wwwroot/**"
+          -Dsonar.cs.opencover.reportsPaths=./coverage**
+          -Dsonar.cs.vstest.reportsPaths=./coverage**
