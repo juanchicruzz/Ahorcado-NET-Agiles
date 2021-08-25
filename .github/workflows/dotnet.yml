@@ -31,19 +31,6 @@ jobs:
     - name: testUI
       working-directory: ./UITestAhorcado
       run: dotnet test
-#    - name: dotnet-sonarcloud-analysis
-#  # You may pin to the exact commit or the version.
-#  # uses: spoland/dotnet-sonarcloud-analysis@df570921891576c845d66818902f5342b40c3cd8
-#      uses: spoland/dotnet-sonarcloud-analysis@v1.0
-#      with:
-#    # Specifies the key of the analyzed project in SonarCloud
-#        project-key: juanchicruzz_Ahorcado-NET-Agiles
-#    # Specifies the SonarCloud organization
-#        sonar-organization: juanchicruzz
-#    # Specifies the access token to authenticate with to SonarCloud
-#        sonar-host-url: http://localhost:9000
-#      # Path to OpenCover coverage reports
-#       opencover-reports-paths: ./coverage**
     - name: Static Code Analyst
       uses: sonarsource/sonarcloud-github-action@master
       env:
