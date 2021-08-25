@@ -28,7 +28,7 @@ namespace Ahorcado.Test
 
             HangmanModel result = hangmanService.SetPlayers("player1", "player2");
 
-            Assert.Equal("player1", result.Player1);
+            Assert.Equal("player4", result.Player1);
             Assert.Equal("player2", result.Player2);
         }
 
