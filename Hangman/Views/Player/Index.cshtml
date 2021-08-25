@@ -8,12 +8,12 @@
         <div class="d-flex justify-content-center">
             <div class="col-md-6">
                 <div class="form-group">
-                    <label for="username">Nombre de Jugador 1</label>
+                    <label for="username">Nombre de PLAYER 1</label>
                     @Html.TextBoxFor(m => m.Player1, new { @class = "form-control", autofocus = "autofocus", @id = "player1" })
                     @Html.ValidationMessageFor(model => model.Player1, "", new { @class = "text-danger" })
                 </div>
                 <div class="form-group">
-                    <label for="username">Nombre de Jugador 2</label>
+                    <label for="username">Nombre de PLAYER 2</label>
                     @Html.TextBoxFor(m => m.Player2, new { @class = "form-control", @id = "player2" })
                     @Html.ValidationMessageFor(model => model.Player2, "", new { @class = "text-danger" })
                 </div>
